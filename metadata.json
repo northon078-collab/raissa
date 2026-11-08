@@ -1,0 +1,6 @@
+{
+  "name": "Raissa Makeup - Agendamento Online",
+  "description": "Agendamento online elegante e rápido de maquiagem, design de sobrancelhas e penteados com Raissa Makeup. Escolha o serviço, data, horário e confirme direto pelo WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

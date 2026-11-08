@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --color-blush-base: #fff5f7;
+  --color-blush-card: #ffffff;
+  --color-blush-accent: #ffe3ec;
+  --color-rose-primary: #d6336c;
+  --color-rose-vibrant: #e64980;
+  --color-rose-dark: #a61e4d;
+  --color-champagne: #d4af37;
+  --color-text-main: #2b1e22;
+  --color-text-muted: #724e58;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fff5f7;
+  color: #2b1e22;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar in soft rose */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fff0f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #f783ac;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e64980;
+}
+
+/* Elegant ornamental divider */
+.ornament-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.ornament-line::before,
+.ornament-line::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(230, 73, 128, 0.35), transparent);
+}
+
+/* Soft delicate rose shadow */
+.shadow-soft {
+  box-shadow: 0 4px 20px -2px rgba(214, 51, 108, 0.08), 0 2px 6px -1px rgba(214, 51, 108, 0.05);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 10px 25px -4px rgba(214, 51, 108, 0.15), 0 4px 10px -2px rgba(214, 51, 108, 0.08);
+}
+
+/* Ocultar badge, drawer de feedback ou widgets injetados automaticamente pelo Netlify */
+netlify-drawer,
+#netlify-drawer,
+iframe[id*="netlify"],
+iframe[src*="netlify"],
+[data-netlify-drawer],
+.netlify-badge,
+[class*="netlify-badge"],
+[id*="netlify-drawer"],
+#netlify-identity-widget {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+}
